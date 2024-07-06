@@ -365,6 +365,9 @@ section .title::after{
 .skills-content .right .js::before{
     width: 70%;
 }
+.skills-content .right .node::before{
+    width: 75%;
+}
 .skills-content .right .sql::before{
     width: 75%;
 }
