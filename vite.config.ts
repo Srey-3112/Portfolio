@@ -19,4 +19,9 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: '/Portfolio/', // Replace with your actual repository name
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  }
 }));
