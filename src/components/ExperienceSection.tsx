@@ -10,7 +10,7 @@ const ExperienceSection = () => {
       period: "Sep 2024 - Dec 2024",
       location: "On-Site",
       description: "Developed a Python-based data automation pipeline for NASA’s hydrological datasets, converting complex .nc4 files into structured Excel outputs. Engineered data consistency with timestamp aggregation and built LSTM-based models achieving 82.2% accuracy for water inflow prediction.",
-      logo: "src/Images/hatch.jpeg",
+      logo: "public/Images/hatch.jpeg",
       technologies: ["Python","Machine Learning","Pandas","LSTM"],
       achievements: ["Automated extraction and transformation of large-scale NASA datasets", "Achieved 82.2% accuracy and RMSE of 3.61 with LSTM-based prediction", "Enhanced time-series consistency across 30,000+ records"],
       highlight: "Most Recent"
@@ -22,7 +22,7 @@ const ExperienceSection = () => {
       period: "Jan 2023 - May 2023",
       location: "Remote",
       description: "Orchestrated the development of a full-stack e-commerce platform using the MERN stack, boosting website traffic by 30% through responsive design and MongoDB query optimization. Led backend scaling with Node.js and revamped the frontend with React to enhance user experience and engagement.",
-      logo: "src/Images/grownitedlogo.png",
+      logo: "public/Images/grownitedlogo.png",
       technologies: ["MongoDB", "ReactJS", "REST APIs", "NodeJS","ExpressJS","Database Optimization"],
       achievements: ["30% increase in website traffic through responsive design", "15% boost in user satisfaction with modern UI/UX", "Scalable backend performance under high load"],
       highlight: "Performance Focus"
