@@ -1,5 +1,7 @@
 
 import { GraduationCap, Calendar, BookOpen } from 'lucide-react';
+import mcmaster from '../assests/Images/mcmasterlogo.webp';
+
 
 const PathToExpertise = () => {
   const courses = [
@@ -45,7 +47,7 @@ const PathToExpertise = () => {
           <div className="flex justify-center animate-slide-up" style={{animationDelay: '0.2s'}}>
             <div className="w-80 h-80 glass-card rounded-3xl flex items-center justify-center relative overflow-hidden">
               <img
-                src="/Portfolio/Images/mcmasterlogo.webp"
+                src={mcmaster}
                 alt="McMaster Logo"
                 className="w-60 h-60 object-contain"
               />

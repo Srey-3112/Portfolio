@@ -1,5 +1,6 @@
 
 import { Github, Linkedin, Mail, Code, Database, Brain } from 'lucide-react';
+import pimage from '../assests/Images/ProfileImage.jpg';
 
 const HeroSection = () => {
   return (
@@ -72,7 +73,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-600/20 flex items-center justify-center animate-glow">
               <img
-                src="/Portfolio/Images/ProfileImage.jpg"
+                src={pimage}
                 alt="Deep Patel"
                 className="w-72 h-72 lg:w-88 lg:h-88 rounded-full object-cover"
               />
