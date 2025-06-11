@@ -1,5 +1,8 @@
 
 import { ExternalLink, Github } from 'lucide-react';
+import stock from '../assests/Images/stockproject.png';
+import watchwave from '../assests/Images/watchwaveproject.png';
+import CBT from '../assests/Images/CBT.png';
 
 const ProjectsSection = () => {
   const projects = [
@@ -7,7 +10,7 @@ const ProjectsSection = () => {
       title: "StockXpert: Real-Time Trading & Analytics Platform",
       description: "Developed a responsive stock trading platform using Angular and Node.js, reducing load times by 60%. Integrated real-time data via Finnhub and Polygon.io APIs and enhanced user analytics with MongoDB and Highcharts.",
       technologies: ["Angular", "NodeJS", "MongoDB", "GCP"],
-      image: "/lovable-uploads/64bd1504-c855-4a14-b76c-f33edef0c479.png",
+      image: stock,
       github: "",
       demo: "https://drive.google.com/file/d/1PnAILv0GjZgYgMYiafdlGomfxlPa4XFF/view?usp=drive_link"
     },
@@ -15,7 +18,7 @@ const ProjectsSection = () => {
       title: "WatchWave: Real-Time Video Streaming Platform",
       description: "Built a dynamic video streaming platform using ReactJS and Material UI, integrating YouTube REST API for real-time content. Delivered a responsive, immersive UI with seamless navigation and deployed it on Netlify for uninterrupted access.",
       technologies: ["React", "Material UI", "Tailwind CSS", "Rest API"],
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d",
+      image: watchwave,
       github: "https://github.com/Srey-3112/WatchWave",
       demo: "https://watchwave.netlify.app/"
     },
@@ -23,7 +26,7 @@ const ProjectsSection = () => {
       title: "Computer Based Testing: Secure Online Exam Platform",
       description: "Created a mobile-responsive exam platform using Django, reducing test time by 40%. Implemented role-based access with multi-factor authentication and real-time notifications, enhancing security and boosting user engagement by 50%.",
       technologies: ["Python", "Django", "MySql", "Authentication"],
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71",
+      image: CBT,
       github: "#",
       demo: "#"
     }
