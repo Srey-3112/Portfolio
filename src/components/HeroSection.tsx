@@ -88,6 +88,9 @@ const HeroSection = () => {
             <div className="absolute top-1/2 -right-8 w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center animate-float" style={{animationDelay: '2s'}}>
               <span className="text-lg">SQL</span>
             </div>
+            <div className="absolute top-8 -left-8 w-20 h-20 bg-purple-500/20 rounded-full flex items-center justify-center animate-float" style={{animationDelay: '2s'}}>
+              <span className="text-xl">NodeJS</span>
+            </div>
           </div>
         </div>
       </div>
