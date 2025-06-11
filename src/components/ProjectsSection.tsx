@@ -1,7 +1,7 @@
 import { ExternalLink, Github } from 'lucide-react';
-import stock from '../assets/images/stockproject.png';
-import watchwave from '../assets/images/watchwaveproject.png';
-import CBT from '../assets/images/CBT.png';
+import stock from '../assests/Images/stockproject.png';
+import watchwave from '../assests/Images/watchwaveproject.png';
+import CBT from '../assests/Images/CBT.png';
 
 const ProjectsSection = () => {
   const projects = [
@@ -48,14 +48,18 @@ const ProjectsSection = () => {
               className="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 group animate-slide-up"
               style={{animationDelay: `${index * 0.2}s`}}
             >
-              {/* Fixed image container with proper aspect ratio and scaling */}
-              <div className="relative h-56 overflow-hidden bg-gray-900 flex items-center justify-center">
+              <div className="relative h-48 overflow-hidden bg-gray-800">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 p-2"
+                  className="w-full h-full object-contain bg-gray-900 group-hover:scale-105 transition-transform duration-300"
+                  style={{
+                    objectPosition: 'center',
+                    maxHeight: '100%',
+                    maxWidth: '100%'
+                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               </div>
 
               <div className="p-6 space-y-4">
