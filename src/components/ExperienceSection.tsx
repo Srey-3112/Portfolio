@@ -1,4 +1,3 @@
-
 import { Calendar, MapPin, Building2, ArrowUpRight, Zap, Star, Trophy, Target } from 'lucide-react';
 import Hatch from '../assests/Images/hatch.jpeg';
 import Grownited from '../assests/Images/grownitedlogo.png';
@@ -12,7 +11,7 @@ const ExperienceSection = () => {
       role: "Junior Software Developer Co-op",
       period: "Sep 2024 - Dec 2024",
       location: "On-Site",
-      description: "Developed a Python-based data automation pipeline for NASA’s hydrological datasets, converting complex .nc4 files into structured Excel outputs. Engineered data consistency with timestamp aggregation and built LSTM-based models achieving 82.2% accuracy for water inflow prediction.",
+      description: "Developed a Python-based data automation pipeline for NASA's hydrological datasets, converting complex .nc4 files into structured Excel outputs. Engineered data consistency with timestamp aggregation and built LSTM-based models achieving 82.2% accuracy for water inflow prediction.",
       logo: Hatch,
       technologies: ["Python","Machine Learning","Pandas","LSTM"],
       achievements: ["Automated extraction and transformation of large-scale NASA datasets", "Achieved 82.2% accuracy and RMSE of 3.61 with LSTM-based prediction", "Enhanced time-series consistency across 30,000+ records"],
@@ -61,18 +60,18 @@ const ExperienceSection = () => {
 
           <div className="space-y-12">
             {experiences.map((experience, index) => (
-              <div className="relative group">
+              <div className="relative group" key={index}>
                 
                 {/* Timeline dot */}
                 <div className="absolute left-6 top-8 w-4 h-4 bg-black rounded-full border-4 border-white z-10 hidden md:block"></div>
 
                 <div className="md:ml-20">
-                  <div className="bg-black border border-white rounded-lg p-8 hover:border-primary/30 transition-all duration-300">
+                  <div className="bg-black border border-white rounded-lg p-4 sm:p-6 lg:p-8 hover:border-primary/30 transition-all duration-300">
                     
-                    {/* Header */}
-                    <div className="flex items-start justify-between mb-6">
+                    {/* Header - Mobile Responsive */}
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-6 gap-4">
                       <div className="flex items-center gap-4">
-                        <div className="w-20 h-20 bg-black border border-black rounded-lg p-1 flex items-center justify-center">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-black border border-black rounded-lg p-1 flex items-center justify-center flex-shrink-0">
                           <img
                             src={experience.logo}
                             alt={`${experience.company} logo`}
@@ -88,40 +87,41 @@ const ExperienceSection = () => {
                           />
                         </div>
                         
-                        <div>
-                          <h3 className="text-2xl font-bold text-white">{experience.company}</h3>
-                          <p className="text-lg text-primary font-medium">{experience.role}</p>
+                        <div className="min-w-0 flex-1">
+                          <h3 className="text-xl sm:text-2xl font-bold text-white break-words">{experience.company}</h3>
+                          <p className="text-base sm:text-lg text-primary font-medium break-words">{experience.role}</p>
                         </div>
                       </div>
                       
-                      <div className="text-right text-sm text-white">
-                        <div className="flex items-center gap-2 mb-1">
-                          <Calendar className="w-4 h-4" />
-                          <span>{experience.period}</span>
+                      {/* Date and Location - Mobile Responsive */}
+                      <div className="text-left sm:text-right text-sm text-white flex-shrink-0">
+                        <div className="flex items-center gap-2 mb-1 sm:justify-end">
+                          <Calendar className="w-4 h-4 flex-shrink-0" />
+                          <span className="whitespace-nowrap">{experience.period}</span>
                         </div>
-                        <div className="flex items-center gap-2">
-                          <MapPin className="w-4 h-4" />
+                        <div className="flex items-center gap-2 sm:justify-end">
+                          <MapPin className="w-4 h-4 flex-shrink-0" />
                           <span>{experience.location}</span>
                         </div>
                       </div>
                     </div>
 
                     {/* Description */}
-                    <p className="text-white leading-relaxed mb-6">
+                    <p className="text-white leading-relaxed mb-6 text-sm sm:text-base">
                       {experience.description}
                     </p>
 
                     {/* Achievements */}
                     <div className="mb-6">
                       <h4 className="text-sm font-semibold text-white mb-3 flex items-center gap-2">
-                        <Star className="w-4 h-4 text-primary" />
+                        <Star className="w-4 h-4 text-primary flex-shrink-0" />
                         Key Achievements
                       </h4>
                       <div className="space-y-2">
                         {experience.achievements.map((achievement, i) => (
                           <div key={i} className="flex items-start gap-3">
                             <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-white text-sm">{achievement}</span>
+                            <span className="text-white text-sm leading-relaxed">{achievement}</span>
                           </div>
                         ))}
                       </div>
@@ -130,14 +130,14 @@ const ExperienceSection = () => {
                     {/* Technologies */}
                     <div>
                       <h4 className="text-sm font-semibold text-white mb-3 flex items-center gap-2">
-                        <Zap className="w-4 h-4 text-primary" />
+                        <Zap className="w-4 h-4 text-primary flex-shrink-0" />
                         Technologies
                       </h4>
                       <div className="flex flex-wrap gap-2">
                         {experience.technologies.map((tech) => (
                           <span
                             key={tech}
-                            className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-md border border-primary/20"
+                            className="px-2 py-1 sm:px-3 bg-primary/10 text-primary text-xs sm:text-sm rounded-md border border-primary/20 whitespace-nowrap"
                           >
                             {tech}
                           </span>
